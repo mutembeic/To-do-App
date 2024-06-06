@@ -2,10 +2,12 @@ import sys
 from datetime import datetime
 
 
-def add_task(tasks, user_id, task_id, title, description, notes, 
-             due_date, priority, completed=False):
+def add_task(
+        tasks, user_id, task_id, 
+        title, description, notes, 
+        due_date, priority, 
+        completed=False):
     """Adds a task to the task list
-    
     Args:
         tasks(list): List of tasks
         user_id(int): User ID
@@ -52,8 +54,10 @@ def add_task(tasks, user_id, task_id, title, description, notes,
 tasks = []
 
 add_task(
-        tasks, "1", 34440, "buy a burger", "purchasing a burger tonight",
-        "turn left on hello world", "14/05", "urgent")
+        tasks, "1", 34440, "buy a burger", 
+        "purchasing a burger tonight",
+        "turn left on hello world", "14/05", 
+        "urgent")
 
 for task in tasks:
     print(task)
